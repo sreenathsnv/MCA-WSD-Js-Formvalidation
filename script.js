@@ -82,7 +82,10 @@ date.addEventListener('keyup',
                     {
                         after[4].innerHTML =    "<p class = 'after-text-valid'>valid</p> <i class=\"fa fa-check-circle\" aria-hidden=\"true\"></i>";
                     }
-                    else{after[4].innerHTML = "<p class = 'after-text-invalid'>Age should be valid (above 18)</p><i class=\"fa fa-times\" aria-hidden=\"true\" style = \"color:red\"></i>"}
+                    else
+                    {after[4].innerHTML = "<p class = 'after-text-invalid'>Age should be valid (above 18)</p><i class=\"fa fa-times\" aria-hidden=\"true\" style = \"color:red\"></i>";
+                    submitBtn.disabled = true;
+                     }
 
                 }
                 else{after[4].innerHTML = "<p class = 'after-text-invalid'>Invalid date</p><i class=\"fa fa-times\" aria-hidden=\"true\" style = \"color:red\"></i>"}
