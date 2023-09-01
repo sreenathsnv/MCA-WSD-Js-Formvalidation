@@ -81,6 +81,7 @@ date.addEventListener('keyup',
                     if((currentYear - date_obj[0])>18 && (currentYear - date_obj[0])<120 )
                     {
                         after[4].innerHTML =    "<p class = 'after-text-valid'>valid</p> <i class=\"fa fa-check-circle\" aria-hidden=\"true\"></i>";
+                        if(submitBtn.disabled){submitBtn.disabled = false;}
                     }
                     else
                     {after[4].innerHTML = "<p class = 'after-text-invalid'>Age should be valid (above 18)</p><i class=\"fa fa-times\" aria-hidden=\"true\" style = \"color:red\"></i>";
